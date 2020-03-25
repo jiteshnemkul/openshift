@@ -16,4 +16,12 @@ public class CustomerController {
         customerList.add(new Customer(2, "bishal"));
         return customerList;
     }
+
+    @RequestMapping("/movies")
+    public List<Movies> findmovies(){
+        List<Movies> movielist=new ArrayList<>();
+        movielist.add(new Movies(1,"KGF2"));
+        movielist.add(new Movies(1,"Walking dead"));
+return  movielist;
+    }
 }
